@@ -7,20 +7,21 @@ body {
   margin: 0;
 }
 
-ul {
+ul.taskbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: 333;
 }
-li {
-  float: left;
-}
 
-.in {
-  display: none;
-}
+/* li.taskbar {
+  float: left;
+} */
+
+/* li {
+  float: left;
+} */
 
 li a {
   display: block;
@@ -28,6 +29,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  float: left;
 }
 
 li a:hover {
