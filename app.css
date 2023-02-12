@@ -1,10 +1,11 @@
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 237, 150);
+  background-color: rgb(248, 216, 202);
   transition: background-color 100ms linear;
   height: 100%;
   margin: 0;
+  background-image: url("https://www.italia.it/content/dam/tdh/en/interests/toscana/pisa/pisa/media/20210310164211-pisa.jpg");
 }
 
 ul.taskbar {
@@ -15,17 +16,9 @@ ul.taskbar {
   background-color: 333;
 }
 
-/* li.taskbar {
-  float: left;
-} */
-
-/* li {
-  float: left;
-} */
-
 li a {
   display: block;
-  color: rgb(255, 173, 87);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,10 +30,10 @@ li a:hover {
 }
 
 header {
-  background-color: rgb(219, 174, 106);
-  padding: 30px;
+  background-color: rgb(248, 210, 193);
+  padding: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   color: white;
   border: 2px solid black;
 }
@@ -48,26 +41,60 @@ img {
   border: 2px solid black;
 }
 
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+.checked {
+  color: orange;
+}
+
+grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.tips {
+  margin-left: 86%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15x;
+  margin-left: 86%;
+}
+
 article {
   padding: 20px;
   width: 70%;
-  background-color: rgb(219, 173, 106);
+  background-color: rgb(255, 232, 219);
   height: 230px;
   border: 2px solid black;
 }
 
 footer {
-  background-color: #777;
+  background-color: lightgray;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: rgb(7, 1, 1);
   border: 2px solid black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   article,
   footer {
-    width: 100%;
+    width: auto;
     height: auto;
   }
 }
@@ -80,4 +107,12 @@ footer {
 .footer,
 .push {
   height: 50px;
+}
+
+.ingridienser {
+  padding: 20px;
+  width: 17%;
+  background-color: rgb(255, 232, 219);
+  height: 230px;
+  border: 2px solid black;
 }
